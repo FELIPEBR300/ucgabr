@@ -1,15 +1,15 @@
-// importando para uplods de arquivos
+// Importando para uploads de arquivos
 const multer = require("multer");
 
 const storage = multer.memoryStorage();
 
-// configure o multer
+// Configura o Multer
 const upload = multer({
   storage,
   limits: {
-    fieldSize: 5 * 1024 * 1024 // limite de 5md
+    fileSize: 5 * 1024 * 1024 // Limite de 5MB
   }
 });
 
-// exporta para utilzar em outros arquivos 
+// Exporta para utilizar em outros arquivos
 module.exports = upload;

@@ -66,7 +66,7 @@ function renderPhotoGrid(photos) {
     return;
   }
 
-  // Para cada foto no array, cria um card e adiciona ao grid
+  // Para cada foto no array, criar um Card e adiciona ao Grid
   photos.forEach((photo) => {
     const photoCard = createPhotoCardElement(photo);
     photoGrid.appendChild(photoCard);
@@ -81,14 +81,14 @@ function createPhotoCardElement(photo) {
   // Monta URL para a imagem (API + ID da foto + /image)
   const imageUrl = `${config.apiUrl}/${photo._id}/image`;
 
-  // Define o HTML interno do card com a imagem e informação
+  // Define o HTML interno do card (Imagem e informação)
   card.innerHTML = `
-          <img src="${imageUrl}" alt= "${photo.name}"
-             onerror="this.onerror=null; this.src='${config.placeholderImage}'">
-          <div class="photo-info">
+         <img src="${imageUrl}" alt="${photo.name}"
+              onerror="this.onerror=null; this.src='${config.placeholderImage}'">
+         <div class="photo-info">
              <div class="photo-name">${photo.name}</div>
-          </div>
-        `; // Incluir Preenchimento do Card
+         </div>
+         `;
 
   return card;
 }
