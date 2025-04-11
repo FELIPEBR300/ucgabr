@@ -1,4 +1,4 @@
-// Importa para interagir com o banco de dados
+// Importa para interagir com o banco de dadoss
 const mongoose = require("mongoose");
 
 // Carrega váriaveis de ambiente do arquivo .ENV
