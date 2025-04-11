@@ -83,7 +83,7 @@ function createPhotoCardElement(photo) {
 
   // Define o HTML interno do card com a imagem e informação
   card.innerHTML = `
-          <img src="${imageUrl}" alt="${photo.name}"
+          <img src="${imageUrl}" alt= "${photo.name}"
              onerror="this.onerror=null; this.src='${config.placeholderImage}'">
           <div class="photo-info">
              <div class="photo-name">${photo.name}</div>
